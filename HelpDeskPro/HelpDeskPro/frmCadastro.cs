@@ -32,9 +32,37 @@ namespace HelpDeskPro
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal frmMenuPrincipal = new frmMenuPrincipal();
-            frmMenuPrincipal.Show();
-            this.Hide();
+            if(txtBoxUsuario.Text.Length < 4)
+            {
+                MessageBox.Show("O nome de usuário deve ter pelo menos 4 caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtBoxSenha.Text.Length < 6)
+            {
+                MessageBox.Show("A senha deve ter pelo menos 6 caracteres.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (txtBoxSenha.Text != txtBoxSenhaNovamente.Text)
+            {
+                MessageBox.Show("As senhas não coincidem.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else
+            {
+                BancoDeDados bancoDeDados = new BancoDeDados();
+                HashSenha hash = new HashSenha(); 
+                if (bancoDeDados.Cadastro(txtBoxUsuario.Text, hash.GerarHash(txtBoxSenha.Text)))
+                {
+                    frmMenuPrincipal frmMenuPrincipal = new frmMenuPrincipal();
+                    frmMenuPrincipal.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao cadastrar usuário.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }                
         }
     }
 }

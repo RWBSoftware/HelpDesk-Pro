@@ -308,11 +308,12 @@
             cBoxFiltro.DropDownStyle = ComboBoxStyle.DropDownList;
             cBoxFiltro.FlatStyle = FlatStyle.Flat;
             cBoxFiltro.FormattingEnabled = true;
-            cBoxFiltro.Items.AddRange(new object[] { "Diário", "Semanal", "Mensal" });
+            cBoxFiltro.Items.AddRange(new object[] { "Diario", "Semanal", "Mensal" });
             cBoxFiltro.Location = new Point(237, 13);
             cBoxFiltro.Name = "cBoxFiltro";
             cBoxFiltro.Size = new Size(130, 28);
             cBoxFiltro.TabIndex = 15;
+            cBoxFiltro.SelectedIndexChanged += cBoxFiltro_SelectedIndexChanged;
             // 
             // panel6
             // 

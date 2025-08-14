@@ -17,7 +17,9 @@ namespace HelpDeskPro
             InitializeComponent();
             Data();
             DistribuirValor();
+            cBoxFiltro.SelectedIndex = 0;
         }
+
 
         public void Data()
         {
@@ -27,7 +29,16 @@ namespace HelpDeskPro
 
         public void DistribuirValor()
         {
-            cBoxFiltro.SelectedIndex = 0;
+            BancoDeDados bancoDeDados = new BancoDeDados();
+            var tipo = cBoxFiltro.Text;
+            var dashboardChamados = bancoDeDados.ObterDashboardChamados(tipo.ToLower());
+            foreach (var itens in dashboardChamados)
+            {
+                lblTotal.Text = itens.Total.ToString();
+                lblResolvidos.Text = itens.Resolvidos.ToString();
+                lblAberto.Text = itens.EmAberto.ToString();
+                lblAndamento.Text = itens.EmAndamento.ToString();
+            }
         }
 
 
@@ -58,6 +69,11 @@ namespace HelpDeskPro
         private void btnSair_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        private void cBoxFiltro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DistribuirValor();
         }
     }
 }

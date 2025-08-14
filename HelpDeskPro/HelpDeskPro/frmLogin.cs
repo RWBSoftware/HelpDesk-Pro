@@ -33,9 +33,18 @@ namespace HelpDeskPro
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            frmMenuPrincipal frmMenuPrincipal = new frmMenuPrincipal();
-            frmMenuPrincipal.Show();
-            this.Hide();
+            BancoDeDados bancoDeDados = new BancoDeDados();
+            HashSenha hash = new HashSenha();
+            if (bancoDeDados.Login(txtBoxUsuario.Text, hash.GerarHash(txtBoxSenha.Text)))
+            {
+                frmMenuPrincipal frmMenuPrincipal = new frmMenuPrincipal();
+                frmMenuPrincipal.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
