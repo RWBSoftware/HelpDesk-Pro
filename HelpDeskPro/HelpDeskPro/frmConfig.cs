@@ -24,7 +24,7 @@ namespace HelpDeskPro
 
         private void btnMudarSenha_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Em Breve", "Proxima Atualização", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnTrocarConta_Click(object sender, EventArgs e)
@@ -36,7 +36,7 @@ namespace HelpDeskPro
 
         private void btnAvaliacao_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Em Breve", "Proxima Atualização", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

@@ -55,7 +55,7 @@ namespace HelpDeskPro
                 {
                     frmMenuPrincipal frmMenuPrincipal = new frmMenuPrincipal();
                     frmMenuPrincipal.Show();
-                    this.Hide();
+                    this.Close();
                 }
                 else
                 {

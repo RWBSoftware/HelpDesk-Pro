@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\helpdeskpro\\helpdeskpro\\bancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|solutionrelative:helpdeskpro\\bancodedados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\helpdeskpro\\helpdeskpro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|solutionrelative:helpdeskpro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\helpdeskpro\\helpdeskpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|solutionrelative:helpdeskpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|c:\\users\\kauac\\onedrive\\documentos\\projetos\\helpdeskpro\\helpdeskpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25930B5C-9C16-480B-BE64-1A4E5DA7336D}|HelpDeskPro\\HelpDeskPro.csproj|solutionrelative:helpdeskpro\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +39,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Program.cs",
+              "RelativeDocumentMoniker": "HelpDeskPro\\Program.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Program.cs",
+              "RelativeToolTip": "HelpDeskPro\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:40:49.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Form1.cs",
+              "RelativeDocumentMoniker": "HelpDeskPro\\Form1.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Form1.cs",
+              "RelativeToolTip": "HelpDeskPro\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:38:35.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Form1.cs",
+              "RelativeDocumentMoniker": "HelpDeskPro\\Form1.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\Form1.cs [Projeto]",
+              "RelativeToolTip": "HelpDeskPro\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T03:37:56.396Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BancoDeDados.cs",
+              "DocumentMoniker": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\BancoDeDados.cs",
+              "RelativeDocumentMoniker": "HelpDeskPro\\BancoDeDados.cs",
+              "ToolTip": "C:\\Users\\kauac\\OneDrive\\Documentos\\Projetos\\HelpDeskPro\\HelpDeskPro\\BancoDeDados.cs",
+              "RelativeToolTip": "HelpDeskPro\\BancoDeDados.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwCIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-15T02:01:51.081Z",
+              "EditorCaption": ""
             }
           ]
         }

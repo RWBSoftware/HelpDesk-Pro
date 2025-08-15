@@ -42,9 +42,7 @@ namespace HelpDeskPro
                 this.Hide();
             }
             else
-            {
                 MessageBox.Show("Usuário ou senha incorretos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

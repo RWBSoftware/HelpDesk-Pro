@@ -37,6 +37,7 @@
             btnVoltar = new Button();
             btnSalvar = new Button();
             btnLimpar = new Button();
+            cmbStatus = new ComboBox();
             SuspendLayout();
             // 
             // txtTitulo
@@ -94,7 +95,7 @@
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnVoltar.Location = new Point(77, 300);
+            btnVoltar.Location = new Point(82, 351);
             btnVoltar.Margin = new Padding(3, 4, 3, 4);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(120, 39);
@@ -109,7 +110,7 @@
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSalvar.Location = new Point(77, 347);
+            btnSalvar.Location = new Point(82, 398);
             btnSalvar.Margin = new Padding(3, 4, 3, 4);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(246, 39);
@@ -124,7 +125,7 @@
             btnLimpar.FlatAppearance.BorderSize = 0;
             btnLimpar.FlatStyle = FlatStyle.Flat;
             btnLimpar.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLimpar.Location = new Point(203, 300);
+            btnLimpar.Location = new Point(208, 351);
             btnLimpar.Margin = new Padding(3, 4, 3, 4);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(120, 39);
@@ -133,12 +134,24 @@
             btnLimpar.UseVisualStyleBackColor = false;
             btnLimpar.Click += btnLimpar_Click;
             // 
+            // cmbStatus
+            // 
+            cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbStatus.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cmbStatus.FormattingEnabled = true;
+            cmbStatus.Items.AddRange(new object[] { "Aberto", "Em Andamento", "Resolvido" });
+            cmbStatus.Location = new Point(77, 299);
+            cmbStatus.Name = "cmbStatus";
+            cmbStatus.Size = new Size(246, 31);
+            cmbStatus.TabIndex = 12;
+            // 
             // frmCriar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 246, 247);
             ClientSize = new Size(400, 450);
+            Controls.Add(cmbStatus);
             Controls.Add(btnLimpar);
             Controls.Add(btnSalvar);
             Controls.Add(btnVoltar);
@@ -168,5 +181,6 @@
         private Button btnVoltar;
         private Button btnSalvar;
         private Button btnLimpar;
+        private ComboBox cmbStatus;
     }
 }

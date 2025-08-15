@@ -20,7 +20,6 @@ namespace HelpDeskPro
             cBoxFiltro.SelectedIndex = 0;
         }
 
-
         public void Data()
         {
             var data = DateTime.Now;
@@ -41,7 +40,6 @@ namespace HelpDeskPro
             }
         }
 
-
         private void btnCriar_Click(object sender, EventArgs e)
         {
             frmCriar frmCriar = new frmCriar();
@@ -51,12 +49,14 @@ namespace HelpDeskPro
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
+            frmEditar frmEditar = new frmEditar();
+            frmEditar.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Em Breve", "Proxima Atualização", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnConfig_Click(object sender, EventArgs e)

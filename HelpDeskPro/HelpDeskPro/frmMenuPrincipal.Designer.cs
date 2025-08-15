@@ -50,20 +50,12 @@
             label6 = new Label();
             panel5 = new Panel();
             cBoxFiltro = new ComboBox();
-            panel6 = new Panel();
-            lblCancelada = new Label();
-            label10 = new Label();
-            panel7 = new Panel();
-            lblNaoResolvidos = new Label();
-            label12 = new Label();
             panel1.SuspendLayout();
             flowLayoutPanel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel4.SuspendLayout();
             panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -180,7 +172,7 @@
             panel2.BackColor = Color.FromArgb(31, 31, 31);
             panel2.Controls.Add(lblTotal);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(272, 57);
+            panel2.Location = new Point(269, 118);
             panel2.Name = "panel2";
             panel2.Size = new Size(230, 100);
             panel2.TabIndex = 11;
@@ -212,7 +204,7 @@
             panel3.BackColor = Color.FromArgb(31, 31, 31);
             panel3.Controls.Add(lblAberto);
             panel3.Controls.Add(label8);
-            panel3.Location = new Point(523, 57);
+            panel3.Location = new Point(520, 118);
             panel3.Name = "panel3";
             panel3.Size = new Size(230, 100);
             panel3.TabIndex = 12;
@@ -266,7 +258,7 @@
             panel4.BackColor = Color.FromArgb(31, 31, 31);
             panel4.Controls.Add(lblAndamento);
             panel4.Controls.Add(label6);
-            panel4.Location = new Point(272, 180);
+            panel4.Location = new Point(269, 241);
             panel4.Name = "panel4";
             panel4.Size = new Size(230, 100);
             panel4.TabIndex = 13;
@@ -298,7 +290,7 @@
             panel5.BackColor = Color.FromArgb(31, 31, 31);
             panel5.Controls.Add(lblResolvidos);
             panel5.Controls.Add(label4);
-            panel5.Location = new Point(523, 180);
+            panel5.Location = new Point(520, 241);
             panel5.Name = "panel5";
             panel5.Size = new Size(230, 100);
             panel5.TabIndex = 14;
@@ -315,78 +307,12 @@
             cBoxFiltro.TabIndex = 15;
             cBoxFiltro.SelectedIndexChanged += cBoxFiltro_SelectedIndexChanged;
             // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(31, 31, 31);
-            panel6.Controls.Add(lblCancelada);
-            panel6.Controls.Add(label10);
-            panel6.Location = new Point(523, 303);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(230, 100);
-            panel6.TabIndex = 17;
-            // 
-            // lblCancelada
-            // 
-            lblCancelada.AutoSize = true;
-            lblCancelada.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
-            lblCancelada.ForeColor = Color.FromArgb(244, 67, 54);
-            lblCancelada.Location = new Point(98, 54);
-            lblCancelada.Name = "lblCancelada";
-            lblCancelada.Size = new Size(33, 38);
-            lblCancelada.TabIndex = 13;
-            lblCancelada.Text = "0";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
-            label10.ForeColor = Color.FromArgb(244, 67, 54);
-            label10.Location = new Point(41, 16);
-            label10.Name = "label10";
-            label10.Size = new Size(147, 38);
-            label10.TabIndex = 12;
-            label10.Text = "Cancelada";
-            // 
-            // panel7
-            // 
-            panel7.BackColor = Color.FromArgb(31, 31, 31);
-            panel7.Controls.Add(lblNaoResolvidos);
-            panel7.Controls.Add(label12);
-            panel7.Location = new Point(272, 303);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(230, 100);
-            panel7.TabIndex = 16;
-            // 
-            // lblNaoResolvidos
-            // 
-            lblNaoResolvidos.AutoSize = true;
-            lblNaoResolvidos.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
-            lblNaoResolvidos.ForeColor = Color.FromArgb(244, 67, 54);
-            lblNaoResolvidos.Location = new Point(98, 54);
-            lblNaoResolvidos.Name = "lblNaoResolvidos";
-            lblNaoResolvidos.Size = new Size(33, 38);
-            lblNaoResolvidos.TabIndex = 13;
-            lblNaoResolvidos.Text = "0";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI Semibold", 16.2F, FontStyle.Bold);
-            label12.ForeColor = Color.FromArgb(244, 67, 54);
-            label12.Location = new Point(9, 16);
-            label12.Name = "label12";
-            label12.Size = new Size(212, 38);
-            label12.TabIndex = 12;
-            label12.Text = "Não Resolvidos";
-            // 
             // frmMenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(245, 246, 247);
             ClientSize = new Size(800, 450);
-            Controls.Add(panel6);
-            Controls.Add(panel7);
             Controls.Add(cBoxFiltro);
             Controls.Add(panel5);
             Controls.Add(panel4);
@@ -410,10 +336,6 @@
             panel4.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            panel7.ResumeLayout(false);
-            panel7.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -436,12 +358,6 @@
         private Label lblAberto;
         private Label label8;
         private ComboBox cBoxFiltro;
-        private Panel panel6;
-        private Label lblCancelada;
-        private Label label10;
-        private Panel panel7;
-        private Label lblNaoResolvidos;
-        private Label label12;
         private Button btnEditar;
         private Button button1;
         private Button btnConfig;

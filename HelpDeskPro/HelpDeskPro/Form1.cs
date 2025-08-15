@@ -5,6 +5,7 @@ namespace HelpDeskPro
         public Form1()
         {
             InitializeComponent();
+            SQLitePCL.Batteries.Init();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
